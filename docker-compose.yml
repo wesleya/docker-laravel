@@ -5,8 +5,10 @@ services:
     networks:
      - appnet
     volumes:
-     - ./application:/var/www/html
+     - ../:/var/www/html
     working_dir: /var/www/html
+    ports:
+     - 80:80
   mysql:
     image: mysql:5.7
     environment:

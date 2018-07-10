@@ -1,6 +1,6 @@
 FROM ubuntu:18.04
 
-LABEL maintainer="Chris Fidao"
+LABEL maintainer="Wesley Agena"
 
 ENV DEBIAN_FRONTEND=noninteractive
 
