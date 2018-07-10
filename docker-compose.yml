@@ -1,0 +1,28 @@
+version: '3'
+services:
+  app:
+    image: wagena/laravel:latest
+    networks:
+     - appnet
+    volumes:
+     - ./application:/var/www/html
+    working_dir: /var/www/html
+  mysql:
+    image: mysql:5.7
+    environment:
+      MYSQL_ROOT_PASSWORD: secret
+      MYSQL_DATABASE: homestead
+      MYSQL_USER: homestead
+      MYSQL_PASSWORD: secret
+    networks:
+     - appnet
+    volumes:
+     - dbdata:/var/lib/mysql
+networks:
+  appnet:
+    driver: bridge
+volumes:
+  dbdata:
+    driver: local
+  cachedata:
+    driver: local
