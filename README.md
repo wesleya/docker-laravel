@@ -10,6 +10,19 @@ $ docker-compose up
 
 the application will be viewable at localhost:8080 (or whatever port you specify in .env APP_PORT variable) 
 
+## MySQL
+
+here is the env for mysql:
+
+```
+DB_CONNECTION=mysql
+DB_HOST=mysql
+DB_PORT=3306
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+```
+
 ## Run artisan commands
 
 Have to run migrate commands from within docker container
