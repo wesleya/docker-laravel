@@ -42,6 +42,15 @@ $ docker exec -it docker-laravel_app_1 bash
 root@10998dcfbee2:/var/www/html# php artisan migrate
 ```
 
+## Connect to MySQL
+
+```
+# mysql is the host name defined in docker-compose.yml
+# homestead is user defined in docker-compose.yml
+# password is secret defined in docker-compose.yml
+$ mysql -h mysql -u homestead -p
+```
+
 ## Notes
 
 running the "supervisord" command will run both nginx and php fpm
