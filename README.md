@@ -6,7 +6,7 @@ $ docker push wagena/laravel:1.0
 $ docker push wagena/laravel:latest
 
 // bring up application
-$ docker-compose up
+$ docker-compose up -d
 
 the application will be viewable at localhost:8080 (or whatever port you specify in .env APP_PORT variable) 
 
@@ -37,6 +37,9 @@ docker-laravel_mysql_1   mysql            5.7   66bc0f66b7af   355 MB
 
 # run bash in interactive mode in the laravel app container
 $ docker exec -it docker-laravel_app_1 bash
+
+# or alternatively
+$ docker-compose exec app zsh
 
 # now you can run artisan commands
 root@10998dcfbee2:/var/www/html# php artisan migrate
