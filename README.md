@@ -1,14 +1,16 @@
 
 
+```
+// build 
+$ docker build -t wagena/laravel:1.0 -t wagena/laravel:latest 
 
-docker build -t wagena/laravel:1.0 -t wagena/laravel:latest 
-
+// push newest build
 $ docker push wagena/laravel:1.0
-
 $ docker push wagena/laravel:latest
 
 // bring up application
 $ docker-compose up -d
+```
 
 the application will be viewable at localhost:8080 (or whatever port you specify in .env APP_PORT variable) 
 
