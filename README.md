@@ -2,7 +2,9 @@
 
 
 docker build -t wagena/laravel:1.0 -t wagena/laravel:latest 
+
 $ docker push wagena/laravel:1.0
+
 $ docker push wagena/laravel:latest
 
 // bring up application
