@@ -2,7 +2,7 @@
 
 ```
 // build 
-$ docker build -t wagena/laravel:1.0 -t wagena/laravel:latest 
+$ docker build -t wagena/laravel:1.0 -t wagena/laravel:latest .
 
 // push newest build
 $ docker push wagena/laravel:1.0
